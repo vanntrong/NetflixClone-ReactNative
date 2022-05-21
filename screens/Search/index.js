@@ -47,7 +47,7 @@ const SearchScreen = () => {
             <Text style={styles.topSearchTitle}>Tìm kiếm hàng đầu</Text>
             <View style={styles.topSearchList}>
               {topSearch.length > 0 &&
-                topSearch.map((item, index) => (
+                topSearch.map(item => (
                   <TopSearch
                     data={item}
                     handlePresentModalPress={handlePresentModalPress}
